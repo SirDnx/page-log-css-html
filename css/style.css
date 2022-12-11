@@ -11,9 +11,10 @@
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
+}
+
+body{
     font-family: var(--fonte-geral);
 }
 
@@ -22,7 +23,7 @@ header{
     overflow: hidden;
 }
 
-#bg-video{
+.bg-video{
     position: fixed;
     right: 0;
     bottom: 0;
@@ -35,50 +36,49 @@ header{
     background-size: cover;
 }
 
-#caixa-pai{
+.formulario{
     max-width: 400px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 200px;
     padding-top: 40px;
 }
 
-h1{
-    color: white;
+.formulario:first-child{
+    text-align: center;
+}
+
+strong{
+    font-weight: bolder;
+}
+
+fieldset legend{
+    color: #FFFFFF;
     margin-bottom: 50px;
-    font-weight: lighter; 
+    font-size: 2em; 
 }
 
-#conteudo{
-    background-color: transparent;
-    padding: 30px;
+fieldset fieldset{
+    width: 49.5%;    
 }
 
-#titulo{
+.fieldset-inputs{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    text-align: center;
-    font-size: 1.2em;
 }
 
-#entrada-inputs{
-    width: 100%;
-
-}
-
-#input-user, #input-senha{
-    width: 49%;
+.fieldset-input{
     display: inline-block;
-    text-align: center;
 }
 
-section > article > div > label{
+form label{
+    color: #FFFFFF;
     display: block;
-    font-weight: lighter;
-    color: white;
 }
 
-#usuario, #senha{
+.campo-input{
     background-color: var(--cor3);
-    color: white;
+    color: #FFFFFF;
     margin-top: 10px;
     text-align: center;
     width: 100%;
@@ -86,49 +86,40 @@ section > article > div > label{
     height: 50px;
     outline: 0;
     border: none;
+    display: block;
 }
 
-.texto-input::placeholder{
-    
-    opacity: 100%;
-}
-
-#caixa-submeter{
-    margin-top: 5px;
-    width: 100%;
-}
-
-#input-submeter{
+.input-submeter{
+    margin: .7% 0px;
     border: none;
     font-size: 1.3em;
     font-weight: bolder;
     height: 50px;
-    color: white;
+    color: #FFFFFF;
     background-color: var(--cor0);
-    width: 99%;
+    width: 100%;
+    cursor: pointer;
     transition: .3s;
 }
 
-#input-submeter:hover{
+.input-submeter:hover{
     color: var(--cor0);
-    background-color: white; 
-    cursor: pointer;
+    background-color: #FFFFFF;   
 }
 
-#checkbox-lembrar{
-    padding-top: 10px;
-}
-
-#lembrar-label{
-    color: white;
+.lembrar-label{
+    padding-top: 5px;
+    text-align: left;
+    color: #FFFFFF;
     font-size: .9em;
 }
 
-#link-recuperar-senha{
+.link-recuperar-senha{
     text-align: center;
     display: block;
     width: 150px;
     margin: auto;
+    margin-top: 2em;
     color: var(--cor2);
     transition: .3s;
     text-decoration: none;
@@ -136,8 +127,8 @@ section > article > div > label{
     border-bottom: 1px solid var(--cor2);
 }
 
-#link-recuperar-senha:hover{
-    color: white;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+.link-recuperar-senha:hover{
+    color: #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
 }

@@ -7,46 +7,53 @@
     <meta name="keywords" content="página login, css, html, login css, login html">
     <meta name="author" content="SirDnx">
     <title>HealthCash - Fintech</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <video src="video/bg-video.mp4" autoplay loop preload poster="img/capa-bg.png" id="bg-video"></video>   
+        <video src="video/bg-video.mp4" autoplay loop preload poster="img/capa-bg.png" class="bg-video"></video>   
     </header>
-    <form id="caixa-pai">
-        <div id="conteudo">
-            <div id="titulo">
-                <h1>Login <strong>HealthCash</strong></h1> 
-            </div>  
-            <section id="entrada-inputs">
-                <article id="input-user">
-                    <div class="inputs">
+    <main>
+        <form class="formulario">
+            
+            <fieldset>
+                <legend>Login <strong>HealthCash</strong></legend>
+            </fieldset>
+
+            <fieldset class="inputs">
+
+                <fieldset class="fieldset-inputs">
+
+                    <fieldset class="fieldset-input">
+
                         <label for="usuario">Usuário</label>
-                        <input type="text" class="texto-input" name="usuario" id="usuario" placeholder=" " required>
-                    </div>
-                </article>
-                <article id="input-senha">
-                    <div class="inputs">
+                        <input type="text" class="campo-input" name="usuario" id="usuario" required>
+
+                    </fieldset>
+
+                    <fieldset class="fieldset-input">
+
                         <label for="senha">Senha</label>
-                        <input type="password" class="texto-input" name="senha" id="senha" placeholder=" " required>
-                    </div>
-                </article>
-                <article>
-                    <div id="caixa-submeter">
-                        <input id="input-submeter" type="submit" value="Acessar">
-                     </div> 
-                </article>
-            </section>     
-            <div id="checkbox-lembrar">
-                <label for="lembrar" id="lembrar-label">
-                    <input id="lembrar" type='checkbox'>Lembre-me
-                </label>
-            </div>    
-        </div>
-    </form>
-    <div>
-        <a href="#" id="link-recuperar-senha">Esqueceu a Senha?</a>
-    </div>    
+                        <input type="password" class="campo-input" name="senha" id="senha" required>
+
+                    </fieldset>
+
+                </fieldset>
+
+                <input class="input-submeter" type="submit" value="Acessar">
+
+            </fieldset>
+               
+            <label for="lembrar" class="lembrar-label">
+                <input class="lembrar-input" type='checkbox'>Lembre-me
+            </label>
+
+        </form>
+
+        <a href="#" class="link-recuperar-senha">Esqueceu a Senha?</a>
+
+    </main>   
 </body>  
 </html>
