@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="página login moderna com html e css">
-    <meta name="keywords" content="página login, css, html, login css, login html">
     <meta name="author" content="SirDnx">
     <title>HealthCash - Fintech</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
@@ -16,44 +15,30 @@
         <video src="video/bg-video.mp4" autoplay loop preload poster="img/capa-bg.png" class="bg-video"></video>   
     </header>
     <main>
-        <form class="formulario">
-            
-            <fieldset>
-                <legend>Login <strong>HealthCash</strong></legend>
-            </fieldset>
-
-            <fieldset class="inputs">
-
-                <fieldset class="fieldset-inputs">
-
-                    <fieldset class="fieldset-input">
-
-                        <label for="usuario">Usuário</label>
-                        <input type="text" class="campo-input" name="usuario" id="usuario" required>
-
-                    </fieldset>
-
-                    <fieldset class="fieldset-input">
-
-                        <label for="senha">Senha</label>
-                        <input type="password" class="campo-input" name="senha" id="senha" required>
-
-                    </fieldset>
-
+        <div class="container">
+            <form class="formulario">
+                <fieldset>
+                    <legend>Login <strong>HealthCash</strong></legend>
                 </fieldset>
-
-                <input class="input-submeter" type="submit" value="Acessar">
-
-            </fieldset>
-               
-            <label for="lembrar" class="lembrar-label">
-                <input class="lembrar-input" type='checkbox'>Lembre-me
-            </label>
-
-        </form>
-
-        <a href="#" class="link-recuperar-senha">Esqueceu a Senha?</a>
-
+                <fieldset class="inputs">
+                    <fieldset class="fieldset-inputs">
+                        <fieldset class="fieldset-input">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" class="campo-input" name="usuario" id="usuario" required>
+                        </fieldset>
+                        <fieldset class="fieldset-input">
+                            <label for="senha">Senha</label>
+                            <input type="password" class="campo-input" name="senha" id="senha" required>
+                        </fieldset>
+                    </fieldset>
+                    <input class="input-submeter" type="submit" value="Acessar">
+                </fieldset>
+                <label for="lembrar" class="lembrar-label">
+                    <input class="lembrar-input" type="checkbox" id="lembrar">Lembre-me
+                </label>
+            </form>
+            <a href="#" class="link-recuperar-senha">Esqueceu a Senha?</a>
+        </div>
     </main>   
 </body>  
 </html>

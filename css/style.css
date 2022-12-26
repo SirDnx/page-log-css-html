@@ -23,6 +23,14 @@ header{
     overflow: hidden;
 }
 
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .bg-video{
     position: fixed;
     right: 0;
@@ -37,10 +45,7 @@ header{
 }
 
 .formulario{
-    max-width: 400px;
-    margin: auto;
-    margin-top: 200px;
-    padding-top: 40px;
+    max-width: 300px;
 }
 
 .formulario:first-child{
@@ -74,6 +79,7 @@ fieldset fieldset{
 form label{
     color: #FFFFFF;
     display: block;
+    cursor: pointer;
 }
 
 .campo-input{
