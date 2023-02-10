@@ -1,0 +1,7 @@
+.container__form{
+    max-width: 300px;
+}
+
+.container__form:first-child{
+    text-align: center;
+}

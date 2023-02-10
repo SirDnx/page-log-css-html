@@ -1,0 +1,11 @@
+.remember--label{
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    font-size: .8em;
+    justify-content: space-between;
+    padding-top: 1rem;
+    text-align: left;
+    width: 29%;
+}

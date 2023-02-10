@@ -1,0 +1,12 @@
+.content--input__input{
+    background-color: var(--cor3);
+    border: none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.5em;
+    height: 50px;
+    margin-top: 10px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}

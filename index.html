@@ -1,43 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="página login moderna com html e css">
     <meta name="author" content="SirDnx">
     <title>HealthCash - Fintech</title>
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bg-video/bg-video.css">
+    <link rel="stylesheet" href="assets/css/bg-video/bg-video-video.css">
+    <link rel="stylesheet" href="assets/css/main/main.css">
+    <link rel="stylesheet" href="assets/css/main/container-form/container-form.css">
+    <link rel="stylesheet" href="assets/css/main/container-form/form-fieldset/fieldset-legend/fieldset-legend.css">
+    <link rel="stylesheet" href="assets/css/main/container-form/form-fieldset/fieldset-legend/legend-strong.css">
+    <link rel="stylesheet" href="assets/css/main/form-fieldset-inputs/form-fieldset-inputs.css">
+    <link rel="stylesheet" href="assets/css/main/form-fieldset-inputs/fieldset-inputs-content/inputs-content-input/inputs-content-input.css">
+    <link rel="stylesheet" href="assets/css/main/form-fieldset-inputs/fieldset-inputs-content/inputs-content-input/content-input-label.css">
+    <link rel="stylesheet" href="assets/css/main/form-fieldset-inputs/fieldset-inputs-content/inputs-content-input/content-input-input.css">
+    <link rel="stylesheet" href="assets/css/main/form-fieldset-inputs/input-submit.css">
+    <link rel="stylesheet" href="assets/css/main/container-form/remember-label/remember-label.css">
+    <link rel="stylesheet" href="assets/css/main/main-container/link-recover-password.css">
 </head>
-<body>
-    <header>
-        <video src="video/bg-video.mp4" autoplay loop preload poster="img/capa-bg.png" class="bg-video"></video>   
+<body class="body">
+    <header class="bg--video">
+        <video src="assets/video/bg-video.mp4" autoplay loop preload poster="assets/img/capa-bg.png" class="bg--video__video"></video>   
     </header>
-    <main>
-        <div class="container">
-            <form class="formulario">
-                <fieldset>
-                    <legend>Login <strong>HealthCash</strong></legend>
+    <main class="main">
+        <div class="main__container">
+            <form class="container__form">
+                <fieldset class="form__fieldset">
+                    <legend class="fieldset__legend">sign up <strong class="legend__strong">HealthCash</strong></legend>
                 </fieldset>
-                <fieldset class="inputs">
-                    <fieldset class="fieldset-inputs">
-                        <fieldset class="fieldset-input">
-                            <label for="usuario">Usuário</label>
-                            <input type="text" class="campo-input" name="usuario" id="usuario" required>
+                <fieldset class="form__fieldset--inputs">
+                    <fieldset class="fieldset--inputs__content">
+                        <fieldset class="inputs__content--input">
+                            <label class="content--input__label" for="user">user</label>
+                            <input type="text" class="content--input__input" name="user" id="user" required>
                         </fieldset>
-                        <fieldset class="fieldset-input">
-                            <label for="senha">Senha</label>
-                            <input type="password" class="campo-input" name="senha" id="senha" required>
+                        <fieldset class="inputs__content--input">
+                            <label class="content--input__label" for="password">password</label>
+                            <input type="password" class="content--input__input" name="password" id="password" required>
                         </fieldset>
                     </fieldset>
-                    <input class="input-submeter" type="submit" value="Acessar">
+                    <input class="input--submit" type="submit" value="Acessar">
                 </fieldset>
-                <label for="lembrar" class="lembrar-label">
-                    <input class="lembrar-input" type="checkbox" id="lembrar">Lembre-me
+                <label for="remember" class="remember--label">
+                    <input class="remember--input" type="checkbox" id="remember"> remember
                 </label>
             </form>
-            <a href="#" class="link-recuperar-senha">Esqueceu a Senha?</a>
+            <a href="#" class="link--recover--password">forgot your password?</a>
         </div>
     </main>   
 </body>  
